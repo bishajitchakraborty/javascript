@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Try</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+</style>
+<body>
+   <div class="manu">
+       <ul>
+
+           <li class="hbtn">Home</li>
+           <li class="cbtn">content</li>
+           <li class="abtn">About</li>
+       </ul>
+
+   </div>
+   <section class="home common" >HOMEPAGE
+       <img src="image/school.jpg" alt="" height="250px" width="100%" >
+   </section>
+   <section class="content common"> Contentpage</section>
+   <section class="about common">aboutpage</section>
+   <script>
+      const hb=document.querySelector(".hbtn");
+      const cb=document.querySelector(".cbtn");
+      const ab=document.querySelector(".abtn");
+
+      const hp=document.querySelector(".home");
+      const cp= document.querySelector(".content");
+      const ap= document.querySelector(".about");
+
+      hb.addEventListener("click",function(){
+        hp.classList.add("active")
+        ap.classList.remove("active")
+        cp.classList.remove("active")
+      })
+
+      cb.addEventListener("click",function(){
+        cp.classList.add("active")
+        ap.classList.remove("active")
+        hp.classList.remove("active")
+
+        })
+
+       ab.addEventListener("click",function(){
+        ap.classList.add("active")
+        hp.classList.remove("active")
+        cp.classList.remove("active")
+        })
+  
+   
+
+   </script>
+</body>
+  
+ 
+</html>

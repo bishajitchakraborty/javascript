@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.manu{
+    background-color: rgb(14, 132, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    width: 100vw;
+    height: 80px;
+}
+.manu li{
+    list-style-type: none;
+    width: 100px;
+    padding: 10%;
+    cursor: pointer;
+
+
+}
+.manu ul{
+    display:flex;
+    width: 100%;
+}
+.home{
+    background-color: rgb(228, 194, 6);
+    width:100%;
+    height: calc(100vh - 80px);
+
+}
+.content{
+    background-color: rgb(228, 132, 6);
+    width:100%;
+    height: calc(100vh - 80px);
+
+}
+.about{
+    background-color: rgb(6, 228, 61);
+    width:100%;
+    height: calc(100vh - 80px);
+
+}
+.common{
+    position: fixed;
+    display: none;
+}
+.active{
+    display: block !important;
+
+}
